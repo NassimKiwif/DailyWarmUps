@@ -1,26 +1,27 @@
 // 1-using + operator create a function that combine your partner first and last name and return it.*//
 
 // function declaration
-function MyPartnerName(firstname, lastname){
-// write yourcode 
-   }
+function MyPartnerName(firstname, lastname) {
+	// write yourcode 
+}
 // function expression 
 
-let myPartnerName=function(firstname,lastname){
-//write your code
+let myPartnerName = function (firstname, lastname) {
+	//write your code
 }
 
 // arrow function 
 
-let PartnerName2 = (firstName,lastName) => {
-// write your code 
+let PartnerName2 = (firstName, lastName) => {
+	// write your code 
 }
 
 // 2-create a function that return true if the number 13 is a multiple of 3 and false if not.*//
 
-function MultipleOf13orNot(a){
+function MultipleOf13orNot(a) {
 	let result;
-	if (13%3)
+	if (13 % 3) { return false }
+	else { return true }
 }
 // function expression 
 
@@ -30,11 +31,11 @@ function MultipleOf13orNot(a){
 
 // 4-create a function that takes a age as a parametre and return that age in seconds.*//
 
-function AgeInSeconds(age){
+function AgeInSeconds(age) {
 	//write your code
 }
 
-// function expression 
+// function expression
 
 
 
