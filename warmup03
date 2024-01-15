@@ -2,16 +2,14 @@
  * 1-write a function that returns the product of any number by 3.
  */
 function productOf3(n){
-  
-
+  return n*3
 }
 
 /**
  * 2-complete the following function multiply to return the result of multiplying x and y
  */
 function multiply(x,y){
-  
-
+  return x*y
 }
 
 
@@ -19,8 +17,9 @@ function multiply(x,y){
  * 3-complete the following function that Convert Fahrenheit to Celsius if the module for converting it
  */
 function fahrenheitToCelsius(fahrenheit){
-
-
+    if (((fahrenheit-32)*5)/9) {
+        return C 
+    }
 }
 
 
