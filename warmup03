@@ -17,15 +17,13 @@ function multiply(x,y){
  * 3-complete the following function that Convert Fahrenheit to Celsius if the module for converting it
  */
 function fahrenheitToCelsius(fahrenheit){
-    if (((fahrenheit-32)*5)/9) {
-        return C 
-    }
-}
-
+    let c=(fahrenheit-32)*5/9
+        return c 
+    } 
 
 /**
  * 4-Define a function named "sqArea", and make it display square area if you knew the length of its side.
  */
 function sqArea(length) {
-
+    
 }

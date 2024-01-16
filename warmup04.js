@@ -11,10 +11,15 @@
  * @return {string}
  */
 
-function helloWorld(str){
+function helloWorld(str) {
+    if (str === "fr") {
+        return "Bonjour tout le monde"
+    } else if (str === "es") {
+        return "Hola,Mundo"
+    } else if (str === "en"){
+        return "Hello, World"
+    }
 }
-
-
 /**
  * 2 - Write a function called (reverseStr) that takes a string as an input and returns the reverse of each letter
  * followed by a number starting from zero(solve it using while loop).
@@ -25,7 +30,12 @@ function helloWorld(str){
  */
 
 
-function reverseStr(str){
+function reverseStr(str) {
+    let result
+    let i=0
+    while (i<=n){
+        
+    }
 }
 
 /**
@@ -38,5 +48,5 @@ function reverseStr(str){
  * @return {string}
  */
 
-function laugh(num){
+function laugh(num) {
 }
