@@ -16,7 +16,7 @@ function helloWorld(str) {
         return "Bonjour tout le monde"
     } else if (str === "es") {
         return "Hola,Mundo"
-    } else if (str === "en"){
+    } else if (str === "en") {
         return "Hello, World"
     }
 }
@@ -30,12 +30,28 @@ function helloWorld(str) {
  */
 
 
+
+
+
 function reverseStr(str) {
-    let result
-    let i=0
-    while (i<=n){
-        
+    let result = ""
+    let counter =0
+    let i = str.length-1;
+    while (i >= 0) {
+        result += str[i]+counter
+        i--
+        counter++
     }
+    return result
+}
+function reverseStr(str) {
+    let result = ""
+    let i = str.length-1;
+    while (i >= 0) {
+        result += str[i]+(str.length-1-i)
+        i--
+    }
+    return result
 }
 
 /**
@@ -49,4 +65,18 @@ function reverseStr(str) {
  */
 
 function laugh(num) {
+    function laugh(num) {
+        let str="ha"
+        let result = ""
+        let i = 1
+        while (i < num) {
+            result += "ha"
+            i++
+        }
+        return result;
+    }
+}
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
 }
