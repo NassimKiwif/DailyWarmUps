@@ -11,15 +11,39 @@
  * @return {string}
  */
 
-function helloWorld(str) {
-    if (str === "fr") {
-        return "Bonjour tout le monde"
-    } else if (str === "es") {
-        return "Hola,Mundo"
-    } else if (str === "en") {
-        return "Hello, World"
+// Function Declaration
+function helloWorldDeclaration(lang) {
+    if (lang === 'fr') {
+        return 'Bonjour tout le monde';
+    } else if (lang === 'es') {
+        return 'Hola, Mundo';
+    } else {
+        return 'Hello, World';
     }
 }
+
+// Function Expression
+let helloWorldExpression = function(lang) {
+    if (lang === 'fr') {
+        return 'Bonjour tout le monde';
+    } else if (lang === 'es') {
+        return 'Hola, Mundo';
+    } else {
+        return 'Hello, World';
+    }
+};
+
+// Arrow Function
+let helloWorldArrow = lang => {
+    if (lang === 'fr') {
+        return 'Bonjour tout le monde';
+    } else if (lang === 'es') {
+        return 'Hola, Mundo';
+    } else {
+        return 'Hello, World';
+    }
+};
+
 /**
  * 2 - Write a function called (reverseStr) that takes a string as an input and returns the reverse of each letter
  * followed by a number starting from zero(solve it using while loop).
@@ -28,32 +52,44 @@ function helloWorld(str) {
  * @param {string} str
  * @return {string}
  */
-
-
-
-
-
-function reverseStr(str) {
-    let result = ""
-    let counter =0
-    let i = str.length-1;
-    while (i >= 0) {
-        result += str[i]+counter
-        i--
-        counter++
+// Function Declaration
+function reverseStrDeclaration(str) {
+    let reversed = '';
+    let index = str.length - 1;
+    let count = 0;
+    while (index >= 0) {
+        reversed += str[index] + count;
+        index--;
+        count++;
     }
-    return result
-}
-function reverseStr(str) {
-    let result = ""
-    let i = str.length-1;
-    while (i >= 0) {
-        result += str[i]+(str.length-1-i)
-        i--
-    }
-    return result
+    return reversed;
 }
 
+// Function Expression
+let reverseStrExpression = function(str) {
+    let reversed = '';
+    let index = str.length - 1;
+    let count = 0;
+    while (index >= 0) {
+        reversed += str[index] + count;
+        index--;
+        count++;
+    }
+    return reversed;
+};
+
+// Arrow Function
+let reverseStrArrow = str => {
+    let reversed = '';
+    let index = str.length - 1;
+    let count = 0;
+    while (index >= 0) {
+        reversed += str[index] + count;
+        index--;
+        count++;
+    }
+    return reversed;
+};
 /**
  * 3 Write a function called laugh() that takes one parameter,
  * num that represents the number of "ha"s to return.
@@ -64,19 +100,30 @@ function reverseStr(str) {
  * @return {string}
  */
 
-function laugh(num) {
-    function laugh(num) {
-        let str="ha"
-        let result = ""
-        let i = 1
-        while (i < num) {
-            result += "ha"
-            i++
-        }
-        return result;
+// Function Declaration
+function laughDeclaration(num) {
+    let result = '';
+    for (let i = 0; i < num; i++) {
+        result += 'ha';
     }
+    return result;
 }
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
+
+// Function Expression
+let laughExpression = function(num) {
+    let result = '';
+    for (let i = 0; i < num; i++) {
+        result += 'ha';
+    }
+    return result;
+};
+
+// Arrow Function
+let laughArrow = num => {
+    let result = '';
+    for (let i = 0; i < num; i++) {
+        result += 'ha';
+    }
+    return result;
+};
+

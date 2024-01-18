@@ -3,7 +3,10 @@
  * ex: reverseArray([1,2,3]) ==> [3,2,1]
  */
 let reverseArray=(array)=> {
-
+    for (let index = array.length-1; index >=0; index--) {
+        console.log(array[index])    
+    }
+     
 }
 
 
@@ -14,11 +17,12 @@ let reverseArray=(array)=> {
  * counting(3); // => '1, 2, 3'
  */
 
-let countring = (number) => {
-
+let counting = (number) => {
+    let str=''
+    for (let index = 1; index <= number; index--) {
+    }
+    console.log(number[index])
 }
-
-
 /**
  * 3-write a function called (midElement) that takes an array as an argument and returns the element that is located in the middle of that array.
  * @param {Array<any>} array
@@ -26,8 +30,10 @@ let countring = (number) => {
  */
 
  function midElement(array) {
-   
-
+    
+    for (let index = 0; index < array.length; index++) {
+ 
+    }
 }
 
 /**
@@ -40,7 +46,11 @@ let countring = (number) => {
 
   
 function sameLength(array) {
-  
+    let string=""
+    for (let index = 0; index < array.length; index++) {
+        
+        
+    }
 }
 
 /**
