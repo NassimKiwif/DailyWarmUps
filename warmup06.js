@@ -2,11 +2,18 @@
  * 1. write a function to Reverse an array without use array.reverse() method:
  * ex: reverseArray([1,2,3]) ==> [3,2,1]
  */
-let reverseArray=(array)=> {
-    for (let index = array.length-1; index >=0; index--) {
-        console.log(array[index])    
+let reverseArray = (array) => {
+    for (let index = array.length - 1; index >= 0; index--) {
+        console.log(array[index])
     }
-     
+
+}
+let reverseArray = (array) => {
+    let reversed=[]
+    for (let index = array.length - 1; index >= 0; index--) {
+        return reversed
+    }
+
 }
 
 
@@ -18,21 +25,36 @@ let reverseArray=(array)=> {
  */
 
 let counting = (number) => {
-    let str=''
-    for (let index = 1; index <= number; index--) {
+    let str = ''
+    for (let index = 1; index <= number; index++) {
     }
     console.log(number[index])
 }
-/**
- * 3-write a function called (midElement) that takes an array as an argument and returns the element that is located in the middle of that array.
+
+let counter=(number) => {
+    let output = ""
+    for (let i = 1; i <= number; i++) {
+        if (i === number) {
+            output += i
+        }else {
+                output += i + ","
+            }
+        }
+        return output
+    }
+
+
+
+
+/** * 3-write a function called (midElement) that takes an array as an argument and returns the element that is located in the middle of that array.
  * @param {Array<any>} array
  * @return {any}
  */
 
- function midElement(array) {
-    
+function midElement(array) {
+
     for (let index = 0; index < array.length; index++) {
- 
+
     }
 }
 
@@ -44,12 +66,12 @@ let counting = (number) => {
  * @return {Array<string>}
  */
 
-  
+
 function sameLength(array) {
-    let string=""
+    let string = ""
     for (let index = 0; index < array.length; index++) {
-        
-        
+
+
     }
 }
 
@@ -67,8 +89,14 @@ function sameLength(array) {
  */
 
 
- let findAll = function (array, n) {
-   
+let findAll = function (array, number) {
+let output =[]
+for (let index = 0; index < array.length; index++) {
+   if(array[index]===number){
+    output.push(index)
+   }    
+}
+return output
 };
 
 // 6. write a function that takes a string as an argument
@@ -78,7 +106,7 @@ function sameLength(array) {
 //
 // Note : you can`t use any built-in functions .
 
-let reverseWord=(string) => {
+let reverseWord = (string) => {
 
 }
 
@@ -87,8 +115,9 @@ let reverseWord=(string) => {
 //takes a number as a parameter and returns the sum of the first and last digits. Please do this without turning the number into a string.
 
 function sumOfFirstAndLast(number) {
- 
-} 
+
+}
+
 
 
 
