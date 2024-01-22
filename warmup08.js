@@ -26,15 +26,13 @@ function objKey(object){
  * @param {Object} obj
  * @return number
  */
-function objLength(obj) {
-  for (let length in object) {
-     
-  }
-}
-
-
-
-
+function objLengthh(object){
+    let array=[]
+    for (let key in object) {
+        array.push(key)
+        }
+       return array.length
+    }
 /**
  * 3 - Write a function named objSort to sort an array of JavaScript objects based on the id
  * objSort([{id:2,value:50},{id:0,value:70},{id:1,value:40}]) ==> [{id:0,value:70},{id:1,value:40},{id:2,value:50}]
@@ -43,9 +41,6 @@ function objLength(obj) {
  * @param {Array<{id: number, value: number}>} obj
  * @return {Array}
  */
-
-
 function objSort(array){
-
-    
+    return array.sort((a,b)=>a.id-b.id)
 }
