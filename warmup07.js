@@ -9,9 +9,41 @@
 let reverseArrayyy = (array) => {
     let reversedd=[]
     for (let index = array.length - 1; index >= 0; index--) {
-        return reversedd
+        reversedd.push(array.pop())
     }  
+    return reversedd
 }
+//Or 
+// Function Declaration
+function reverseArrayDeclaration(arr) {
+    let reversedArray = []
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversedArray.push(arr[i])
+    }
+    return reversedArray
+}
+console.log(reverseArrayDeclaration([1, 2, 3]))
+
+// Function Expression
+let reverseArrayExpression = function(arr) {
+    let reversedArray = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversedArray.push(arr[i])
+    }
+    return reversedArray
+};
+console.log(reverseArrayExpression([1, 2, 3]))
+
+// Arrow Function
+let reverseArrayArrow = arr => {
+    let reversedArray = []
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversedArray.push(arr[i])
+    }
+    return reversedArray
+}
+
+
 
 /**
  * 2 - Write a function named objKey that take an object as a parameter and returns an array containing the keys of the object
@@ -22,8 +54,24 @@ let reverseArrayyy = (array) => {
  * @return {Array}
  */
 
-let objKey=(object)=>{
+// Function Declaration
+function objKeyDeclaration(obj) {
+    return Object.keys(obj)
 }
+console.log(objKeyDeclaration({name: 'ahmed', age: 20}))
+
+// Function Expression
+let objKeyExpression = function(obj) {
+    return Object.keys(obj)
+};
+console.log(objKeyExpression({name: 'ahmed', age: 20}))   // Outputs ['name', 'age']
+
+// Arrow Function
+let objKeyArrow = obj => Object.keys(obj)
+console.log(objKeyArrow({name: 'ahmed', age: 20}))
+
+    
+
 
 /**
  * 3 - Write a function named objLength to get the length of a JavaScript object
@@ -33,10 +81,22 @@ let objKey=(object)=>{
  * @param {Object} obj
  * @return number
  */
-let objLength=(obj) =>{
-
-    return number
+// Function Declaration
+function objLengthDeclaration(obj) {
+    return Object.keys(obj).length;
 }
+console.log(objLengthDeclaration({name: 'ahmed', age: 20})); // Outputs 2
+
+// Function Expression
+let objLengthExpression = function(obj) {
+    return Object.keys(obj).length;
+};
+console.log(objLengthExpression({name: 'ahmed', age: 20})); // Outputs 2
+
+// Arrow Function
+let objLengthArrow = obj => Object.keys(obj).length;
+console.log(objLengthArrow({name: 'ahmed', age: 20})); // Outputs 2
+
 
 
 /**
@@ -51,6 +111,39 @@ let objLength=(obj) =>{
  * @param {number} n
  * @return {Array}
  */
-let findAll1 = function (array, n) {
-  
+// Function Declaration
+function findAllDeclaration(array, n) {
+    let index = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === n) {
+            index.push(i);
+        }
+    }
+    return index;
+}
+console.log(findAllDeclaration([6, 9, 3, 4, 3, 82, 11], 3)); // Outputs [2, 4]
+
+// Function Expression
+let findAllExpression = function(array, n) {
+    let index = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === n) {
+            index.push(i);
+        }
+    }
+    return index;
 };
+console.log(findAllExpression([6, 9, 3, 4, 3, 82, 11], 3)); // Outputs [2, 4]
+
+// Arrow Function
+let findAllArrow = (array, n) => {
+    let index = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === n) {
+            index.push(i);
+        }
+    }
+    return index;
+};
+console.log(findAllArrow([6, 9, 3, 4, 3, 82, 11], 3)); // Outputs [2, 4]
+

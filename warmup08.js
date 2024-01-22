@@ -8,7 +8,13 @@
  */
 
 function objKey(object){
-}
+    let array=[]
+    for (let key in object) {
+        array.push(key)
+        }
+       return array 
+    }
+
 
 
 
@@ -21,7 +27,9 @@ function objKey(object){
  * @return number
  */
 function objLength(obj) {
-  
+  for (let length in object) {
+     
+  }
 }
 
 
