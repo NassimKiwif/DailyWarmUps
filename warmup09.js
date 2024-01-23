@@ -31,8 +31,8 @@ function addFriend(Newclassmate) {
     family.push(Newclassmate)
     return family
 }
-function nbOfMale(array){
-    let counter=0
-    for(let)
-}e
+// function nbOfMale(array){
+//     let counter=0
+//     for(let)
+// }
 
