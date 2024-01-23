@@ -52,10 +52,26 @@ let counter=(number) => {
  */
 
 function midElement(array) {
-
-    for (let index = 0; index < array.length; index++) {
-
-    }
+    // Function Declaration
+function midElementDeclaration(arr) {
+    if (arr.length === 0) return undefined; // Handle empty array
+    let midIndex = Math.floor(arr.length / 2);
+    return arr.length % 2 === 0 ? arr[midIndex - 1] : arr[midIndex];
+}
+// Function Expression
+let midElementExpression = function(arr) {
+    if (arr.length === 0) return undefined; // Handle empty array
+    let midIndex = Math.floor(arr.length / 2);
+    return arr.length % 2 === 0 ? arr[midIndex - 1] : arr[midIndex];
+};
+// Arrow Function
+let midElementArrow = arr => {
+    if (arr.length === 0) return undefined; // Handle empty array
+    let midIndex = Math.floor(arr.length / 2);
+    return arr.length % 2 === 0 ? arr[midIndex - 1] : arr[midIndex];
+};
+console.log(midElementArrow([1, 2, 3, 4, 5])); // Outputs 3
+console.log(midElementArrow([1, 2, 3, 4]));   // Outputs 2
 }
 
 /**
@@ -68,11 +84,7 @@ function midElement(array) {
 
 
 function sameLength(array) {
-    let string = ""
-    for (let index = 0; index < array.length; index++) {
-
-
-    }
+    
 }
 
 /**

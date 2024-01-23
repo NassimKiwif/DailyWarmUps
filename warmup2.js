@@ -77,4 +77,34 @@ let scoreToGradeArrow = score => {
  * repeatString('dog', 1); // => 'dog'
  * repeatString('dog', 2); // => 'dog' + 'dog' => 'dogdog'
  * repeatString('dog', 3); // => 'dog' + 'dog' + 'dog' => 'dogdogdog'
- */
+ */// Function Declaration
+function repeatStringDeclaration(str, count) {
+  let result = '';
+  while (count > 0) {
+      result += str;
+      count--;
+  }
+  return result;
+}
+// Function Expression
+let repeatStringExpression = function(str, count) {
+  let result = '';
+  while (count > 0) {
+      result += str;
+      count--;
+  }
+  return result;
+};
+// Arrow Function
+let repeatStringArrow = (str, count) => {
+  let result = '';
+  while (count > 0) {
+      result += str;
+      count--;
+  }
+  return result;
+};
+console.log(repeatStringArrow('dog', 0)); // Outputs ''
+console.log(repeatStringArrow('dog', 1)); // Outputs 'dog'
+console.log(repeatStringArrow('dog', 2)); // Outputs 'dogdog'
+console.log(repeatStringArrow('dog', 3)); // Outputs 'dogdogdog'
