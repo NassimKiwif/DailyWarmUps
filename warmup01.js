@@ -1,4 +1,5 @@
-// 1-using + operator create a function that combine your partner first and last name and return it.*//
+// 1-using + operator create a function 
+//that combine your partner first and last name and return it.*//
 
 // function declaration
 function MyPartnerName(firstname, lastname) {
