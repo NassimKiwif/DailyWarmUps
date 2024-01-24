@@ -22,7 +22,7 @@ let PartnerName2 = (firstName, lastName) => {
 
 // 2-create a function that return true if the number 13 is a multiple of 3 and false if not.*//
 //function declaration
-function MultipleOf13orNot(a) {
+function MultipleOf13orNot() {
 	let result;
 	if (13 % 3) { return false }
 	else { return true }

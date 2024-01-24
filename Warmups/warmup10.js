@@ -6,6 +6,8 @@
 // Note : you can`t use any built-in functions .
 
 function reverseStr(str){
+    let rvsstr=""
+
  } 
 
 
@@ -24,10 +26,15 @@ function reverseStr(str){
  * @return {Array}
  */
 
-let findAll = function (array, n) {
- 
+let findAlll = (array, n) =>{
+    let int=[]
+    for (let index = 0; index < array.length; index++) {
+        if (array[index]===n){
+        int.push(index)
+    }
 };
-
+return int
+}
 
 /**
  * 4 - Write a function named objSort to sort an array of JavaScript objects based on the id
@@ -40,7 +47,6 @@ let findAll = function (array, n) {
 
 
 function objSort(array){
-
     
 }
 
