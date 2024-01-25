@@ -8,7 +8,8 @@
  */
 
 
-function objSort(array){    
+function objSort(array){
+    return array.sort((a,b)=>a.id-b.id)
 }
 
 /**2. write a closure function called Counter that have 2 behaviours and a state to check the counter and when invoked it increase or decrease the counter. 
@@ -21,8 +22,12 @@ myCount.counter => 1
 **/ 
 
 let Counter = () => {
-  
-}
+    let count=0
+    return Counter ();{
+ count++
+ return count   
+    } }
+
 
 // 3. Think about some different attributes of books – what do all books have? Ideas include:
 
@@ -52,3 +57,15 @@ let Counter = () => {
 //  } 
 //  displayBook(sorcerersStone); 
 //  // => 'Harry Potter and the Sorcerer's Stone, by J.K. Rowling -- fantasy, $24.99'
+function createBook(title, author, msrp, genre, numberOfPages, description) {
+    return {
+        title: title,
+        author: author,
+        msrp: msrp,
+        genre: genre,
+        numberOfPages: numberOfPages,
+        description: description
+    };
+}
+let book1 = createBook("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 15, "Fantasy", 67, "The work is attributed to the .");
+let book2 = createBook("Romeo and Juliet", "William Shakespeare", 20, "Romance", 400, "A book by , presenting a guide to , .");
