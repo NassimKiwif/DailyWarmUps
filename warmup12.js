@@ -10,11 +10,18 @@
  //  Write a function called fib that accepts a number n as a parameter and computes the nth fibonacci number using the above rules.
  
 
-function fib(number) {
 
-  // TODO: your work goes here
 
+function fib(n) {
+
+  if (n <= 1) {
+    return n;
+  } else {
+   
+    return fib(n - 1) + fib(n - 2);
+  }
 }
+
 
 
 // The Reading List 
@@ -50,3 +57,12 @@ function fib(number) {
 // Change the current book to be the next book to be read
 // Change the next book to be read property to be the first unread book you find in the list of books
 // Booklists and Books might need more methods than that. Try to think of more that might be useful.
+let BookList = ()=> {
+  let Book = {}
+  book.title = title
+  book.genre= genre
+  book.author = author
+  book.read  = read
+  
+  
+}
